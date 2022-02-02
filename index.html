@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <script src="countdown.js"></script>
+
+  <div class="container">
+      <button id="tomato" type="button" onclick="updateDuration()">
+        🍅
+      </button>
+
+    <div id="countdown"><a id="start-timer-display">50</a>:00</div>
+
+    
+    <div class="buttons">
+      <button type="button" onclick="playPauseCountdown()">
+        <div class="imageContainer">
+          <img id="playPause" src="playButton4x.png">
+        </div>
+      </button>
+      <button type="button" onclick="restartCountdown()">
+        <div class="imageContainer" id="resetButton">
+          <img src="resetButton4x.png">
+        </div>
+      </button>
+    </div>
+
+    <audio id="yoScottAudio">
+      <source src="YoScott.m4a" type="audio/mpeg">
+    </audio>
+  </div>
+</body>
+</html>
